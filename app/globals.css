@@ -2,31 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  /* typography */
-  h1 {
+@layer utilities {
+  .text-150 {
     @apply text-[150px] leading-[72px];
   }
-  h2 {
+  .text-72 {
     @apply text-[72px] leading-[72px];
   }
-  h3 {
-    @apply text-[40px] leading-[48px];
+  .text-48 {
+    @apply text-[48px] leading-[48px];
   }
-  h4 {
-    @apply text-[32px] leading-[36px];
+  .text-40 {
+    @apply text-[40px] leading-[40px];
   }
-  h5 {
-    @apply text-[24px] leading-[32px];
+  .text-32 {
+    @apply text-[32px] leading-9;
   }
-  p {
+  .text-24 {
+    @apply text-[24px] leading-8;
+  }
+  .text-16 {
     @apply text-[16px] leading-[26px];
   }
-}
-
-@layer utilities {
+  .text-15 {
+    @apply text-[15px] leading-[25px];
+  }
   /* nav text */
-  .body-nav {
-    @apply text-[12px] leading-[15px] tracking-[0.923px];
+  .text-12 {
+    @apply text-[12px] font-bold leading-[15px] tracking-[0.923px];
+  }
+
+  /* bg customs */
+  .home-hero {
+    background-image: url("/home/mobile/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @screen md {
+      background-image: url("/home/tablet/image-hero-coffeepress.jpg");
+    }
+    @screen lg {
+      background-image: url("/home/desktop/image-hero-coffeepress.jpg");
+    }
   }
 }

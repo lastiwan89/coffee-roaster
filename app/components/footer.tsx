@@ -12,19 +12,19 @@ export default function Footer() {
       </div>
       <div className="flex flex-col gap-6 md:flex-row">
         <Link
-          className="body-nav text-grey-light hover:text-cream-light cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-cream-light cursor-pointer text-center uppercase"
           href="/"
         >
           home
         </Link>
         <Link
-          className="body-nav text-grey-light hover:text-cream-light cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-cream-light cursor-pointer text-center uppercase"
           href="/about"
         >
           about us
         </Link>
         <Link
-          className="body-nav text-grey-light hover:text-cream-light cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-cream-light cursor-pointer text-center uppercase"
           href="/plan"
         >
           create your plan

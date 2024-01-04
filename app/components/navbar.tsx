@@ -10,19 +10,19 @@ export default function Navbar() {
       </div>
       <div className="hidden md:flex md:flex-row md:gap-6">
         <Link
-          className="body-nav text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
           href="/"
         >
           home
         </Link>
         <Link
-          className="body-nav text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
           href="/about"
         >
           about us
         </Link>
         <Link
-          className="body-nav text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
+          className="text-12 text-grey-light hover:text-grey-dark cursor-pointer text-center font-sans font-bold uppercase"
           href="/plan"
         >
           create your plan

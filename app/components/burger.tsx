@@ -23,19 +23,19 @@ export default function Burger() {
       {isOpen && (
         <div className="bg-nav fixed right-0 top-[90px] flex h-full w-full flex-col gap-6 py-10">
           <Link
-            className="hover:text-grey-light heading-h4 cursor-pointer text-center font-serif font-bold capitalize"
+            className="hover:text-grey-light cursor-pointer text-center font-serif text-[24px] font-black capitalize leading-8"
             href="/"
           >
             home
           </Link>
           <Link
-            className="hover:text-grey-light heading-h4 cursor-pointer text-center font-serif font-bold capitalize"
+            className="hover:text-grey-light cursor-pointer text-center font-serif text-[24px] font-black capitalize leading-8"
             href="/about"
           >
             about us
           </Link>
           <Link
-            className="hover:text-grey-light heading-h4 cursor-pointer text-center font-serif font-bold capitalize"
+            className="hover:text-grey-light cursor-pointer text-center font-serif text-[24px] font-black capitalize leading-8"
             href="/plan"
           >
             create your plan

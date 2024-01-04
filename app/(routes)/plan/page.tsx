@@ -3,7 +3,7 @@ import React from "react";
 export default function Plan() {
   return (
     <main>
-      <h1>this is create your plan page</h1>
+      <h3>this is create your plan page</h3>
     </main>
   );
 }
