@@ -7,11 +7,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    borderRadius: {
-      sm: "8px",
-      md: "10px",
-      lg: "12px",
-    },
     extend: {
       fontFamily: {
         sans: ["var(--font-barlow)"],
@@ -35,6 +30,11 @@ const config: Config = {
       },
       backgroundImage: {
         nav: "linear-gradient(360deg, rgba(254, 252, 247, 0.50) 0%, #FEFCF7 55.94%)",
+      },
+      borderRadius: {
+        sm: "8px",
+        md: "10px",
+        lg: "12px",
       },
     },
   },

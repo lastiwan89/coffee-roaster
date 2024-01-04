@@ -6,6 +6,9 @@
   .text-150 {
     @apply text-[150px] leading-[72px];
   }
+  .text-96 {
+    @apply text-[96px] leading-[72px];
+  }
   .text-72 {
     @apply text-[72px] leading-[72px];
   }
@@ -17,6 +20,9 @@
   }
   .text-32 {
     @apply text-[32px] leading-9;
+  }
+  .text-28 {
+    @apply text-[28px] leading-[28px];
   }
   .text-24 {
     @apply text-[24px] leading-8;
@@ -43,5 +49,14 @@
     @screen lg {
       background-image: url("/home/desktop/image-hero-coffeepress.jpg");
     }
+  }
+  .colmask {
+    /* mask-image: linear-gradient(black, transparent); */
+    mask: linear-gradient(360deg, rgba(254, 252, 247, 0.2) 100%, #fefcf7 100%);
+  }
+
+  /* benefit box */
+  .benefit-box {
+    @apply -mb-[630px] h-[902px] md:-mb-[310px] md:h-[540px] lg:-mb-[250px] lg:h-[460px];
   }
 }
