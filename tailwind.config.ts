@@ -29,9 +29,7 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        nav: "linear-gradient(360deg, rgba(254, 252, 247, 0.50) 0%, #FEFCF7 55.94%)",
       },
     },
   },
