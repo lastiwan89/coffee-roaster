@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  /* Typography */
-  .heading-alt {
+@layer base {
+  /* typography */
+  h1 {
     @apply text-[150px] leading-[72px];
   }
-  .heading-h1 {
+  h2 {
     @apply text-[72px] leading-[72px];
   }
-  .heading-h2 {
+  h3 {
     @apply text-[40px] leading-[48px];
   }
-  .heading-h3 {
+  h4 {
     @apply text-[32px] leading-[36px];
   }
-  .heading-h4 {
+  h5 {
     @apply text-[24px] leading-[32px];
   }
-  .body {
+  p {
     @apply text-[16px] leading-[26px];
   }
+}
+
+@layer utilities {
+  /* nav text */
   .body-nav {
     @apply text-[12px] leading-[15px] tracking-[0.923px];
   }
