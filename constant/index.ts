@@ -105,3 +105,27 @@ export const HEAD_QUARTERS: HeadQuarter[] = [
     phone: +61499283629,
   },
 ];
+
+type Icons = {
+  id: number;
+  label: string;
+  url: string;
+};
+
+export const SOCIAL_ICON: Icons[] = [
+  {
+    id: 1,
+    label: "facebook icon",
+    url: "/icon-facebook.svg",
+  },
+  {
+    id: 2,
+    label: "twitter icon",
+    url: "/icon-twitter.svg",
+  },
+  {
+    id: 3,
+    label: "instagram icon",
+    url: "/icon-instagram.svg",
+  },
+];
