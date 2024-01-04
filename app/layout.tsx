@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Barlow } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -28,8 +30,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${barlow.variable}`}>
+      <body
+        className={`${fraunces.variable} ${barlow.variable} bg-cream-light px-6`}
+      >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
