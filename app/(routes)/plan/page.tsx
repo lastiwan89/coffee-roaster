@@ -1,5 +1,6 @@
 import React from "react";
 import { PICK_PLAN } from "@/constant";
+import Button from "@/app/components/button";
 
 export default function Plan() {
   return (
@@ -40,6 +41,24 @@ export default function Plan() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+      {/* skipping the logic and create order summary */}
+      <section className="my-28 grid gap-14">
+        <div className="bg-grey-dark grid gap-2 rounded-md px-6 py-8">
+          <p className="text-16 text-cream-light font-sans font-normal uppercase opacity-50">
+            order summary
+          </p>
+          <p className="text-24 text-cream-light font-serif font-black">
+            “I drink my coffee as <span className="text-cyan-dark">Filter</span>
+            , with a <span className="text-cyan-dark">Decaf</span> type of bean.{" "}
+            <span className="text-cyan-dark">250g</span> ground ala{" "}
+            <span className="text-cyan-dark">Cafetiére</span>, sent to me{" "}
+            <span className="text-cyan-dark">Every Week</span>.”
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Button />
         </div>
       </section>
     </main>
