@@ -50,6 +50,37 @@
       background-image: url("/home/desktop/image-hero-coffeepress.jpg");
     }
   }
+  .about-hero {
+    background-image: url("/about/mobile/image-hero-whitecup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @screen md {
+      background-image: url("/about/tablet/image-hero-whitecup.jpg");
+    }
+    @screen lg {
+      background-image: url("/about/desktop/image-hero-whitecup.jpg");
+    }
+  }
+  .about-barista {
+    background-image: url("/about/mobile/image-commitment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @screen md {
+      background-image: url("/about/tablet/image-commitment.jpg");
+    }
+    @screen lg {
+      background-image: url("/about/desktop/image-commitment.jpg");
+    }
+  }
+  .about-quality {
+    @screen lg {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("/about/desktop/image-quality.jpg");
+    }
+  }
+
+  /* mask */
   .colmask {
     /* mask-image: linear-gradient(black, transparent); */
     mask: linear-gradient(360deg, rgba(254, 252, 247, 0.2) 100%, #fefcf7 100%);
