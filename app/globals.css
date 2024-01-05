@@ -79,6 +79,17 @@
       background-image: url("/about/desktop/image-quality.jpg");
     }
   }
+  .plan-hero {
+    background-image: url("/plan/mobile/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @screen md {
+      background-image: url("/plan/tablet/image-hero-blackcup.jpg");
+    }
+    @screen lg {
+      background-image: url("/plan/desktop/image-hero-blackcup.jpg");
+    }
+  }
 
   /* mask */
   .colmask {
