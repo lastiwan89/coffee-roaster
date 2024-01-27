@@ -129,3 +129,63 @@ export const SOCIAL_ICON: Icons[] = [
     url: "/icon-instagram.svg",
   },
 ];
+
+type CoffeeType = {
+  id: number;
+  title: string;
+  text: string;
+};
+
+export const COFFEE_FILTER: CoffeeType[] = [
+  {
+    id: 1,
+    title: "Capsule",
+    text: "Compatible with Nespresso systems and similar brewers",
+  },
+  {
+    id: 2,
+    title: "Filter",
+    text: "For pour over or drip methods like Aeropress, Chemex, and V60",
+  },
+  {
+    id: 3,
+    title: "Expresso",
+    text: "Dense and finely ground beans for an intense, flavorful experience",
+  },
+];
+
+export const COFFEE_TYPE: CoffeeType[] = [
+  {
+    id: 1,
+    title: "Single Origin",
+    text: "Distinct, high quality coffee from a specific family-owned farm",
+  },
+  {
+    id: 2,
+    title: "Decaf",
+    text: "Just like regular coffee, except the caffeine has been removed",
+  },
+  {
+    id: 3,
+    title: "Blended",
+    text: "Combination of two or three dark roasted beans of organic coffees",
+  },
+];
+
+export const COFFEE_WEIGHT: CoffeeType[] = [
+  {
+    id: 1,
+    title: "250g",
+    text: "Perfect for the solo drinker. Yields about 12 delicious cups.",
+  },
+  {
+    id: 2,
+    title: "500g",
+    text: "Perfect option for a couple. Yields about 40 delectable cups.",
+  },
+  {
+    id: 3,
+    title: "1000g",
+    text: "Perfect for offices and events. Yields about 90 delightful cups.",
+  },
+];
