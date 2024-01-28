@@ -189,3 +189,44 @@ export const COFFEE_WEIGHT: CoffeeType[] = [
     text: "Perfect for offices and events. Yields about 90 delightful cups.",
   },
 ];
+
+export const COFFEE_GRIND: CoffeeType[] = [
+  {
+    id: 1,
+    title: "Wholebean",
+    text: "Best choice if you cherish the full sensory experience",
+  },
+  {
+    id: 2,
+    title: "Filter",
+    text: "For drip or pour-over coffee methods such as V60 or Aeropress",
+  },
+  {
+    id: 3,
+    title: "Cafetiére",
+    text: "Course ground beans specially suited for french press coffee",
+  },
+];
+
+type CoffeePrice = {
+  value: number;
+  title: string;
+  text: string;
+};
+export const COFFEE_DELIVER: CoffeePrice[] = [
+  {
+    value: 7.2,
+    title: "Every week",
+    text: "$7.20 per shipment. Includes free first-class shipping.",
+  },
+  {
+    value: 9.6,
+    title: "Every 2 weeks",
+    text: "$9.60 per shipment. Includes free priority shipping.",
+  },
+  {
+    value: 12.0,
+    title: "Every month",
+    text: "$12.00 per shipment. Includes free priority shipping.",
+  },
+];
