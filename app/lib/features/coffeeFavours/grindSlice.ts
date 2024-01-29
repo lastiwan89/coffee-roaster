@@ -5,6 +5,7 @@ import { SliceType } from "@/types";
 
 const initialState: SliceType = {
   value: "Cafetiére",
+  toggle: false,
 };
 
 const grindSlice = createSlice({
@@ -14,10 +15,13 @@ const grindSlice = createSlice({
     setGrind: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    setGrindToggle: (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload;
+    },
   },
 });
 
-export const { setGrind } = grindSlice.actions;
+export const { setGrind, setGrindToggle } = grindSlice.actions;
 export const initializeGrind = (state: RootState) => {
   state.filter.value;
 };

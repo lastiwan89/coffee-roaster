@@ -5,6 +5,7 @@ import { RootState } from "../../store";
 
 const initialState: SliceType = {
   value: "250g",
+  toggle: false,
 };
 
 const weightSlice = createSlice({
@@ -14,10 +15,13 @@ const weightSlice = createSlice({
     setWeight: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    setWeightToggle: (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload;
+    },
   },
 });
 
-export const { setWeight } = weightSlice.actions;
+export const { setWeight, setWeightToggle } = weightSlice.actions;
 export const initializeWeight = (state: RootState) => {
   state.weight.value;
 };

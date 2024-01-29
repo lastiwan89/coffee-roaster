@@ -5,6 +5,7 @@ import { SliceType } from "@/types";
 
 const initialState: SliceType = {
   value: "Decaf",
+  toggle: false,
 };
 
 const blendSlice = createSlice({
@@ -14,9 +15,12 @@ const blendSlice = createSlice({
     setBlend: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    setBlendToggle: (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload;
+    },
   },
 });
 
-export const { setBlend } = blendSlice.actions;
+export const { setBlend, setBlendToggle } = blendSlice.actions;
 export const initializeBlend = (state: RootState) => state.blend.value;
 export default blendSlice.reducer;

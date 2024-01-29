@@ -5,6 +5,7 @@ import { RootState } from "../../store";
 
 const initialState: SliceType = {
   value: "Filter",
+  toggle: false,
 };
 
 const filterSlice = createSlice({
@@ -14,10 +15,13 @@ const filterSlice = createSlice({
     setFilter: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    setFilterToggle: (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload;
+    },
   },
 });
 
-export const { setFilter } = filterSlice.actions;
+export const { setFilter, setFilterToggle } = filterSlice.actions;
 export const initializeFilter = (state: RootState) => {
   state.filter.value;
 };

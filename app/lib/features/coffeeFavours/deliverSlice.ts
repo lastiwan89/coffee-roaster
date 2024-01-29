@@ -5,6 +5,7 @@ import { RootState } from "../../store";
 
 const initialState: SliceType = {
   value: "Every week",
+  toggle: false,
 };
 
 const deliverSlice = createSlice({
@@ -14,10 +15,13 @@ const deliverSlice = createSlice({
     setDeliver: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+    setDeliverToggle: (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload;
+    },
   },
 });
 
-export const { setDeliver } = deliverSlice.actions;
+export const { setDeliver, setDeliverToggle } = deliverSlice.actions;
 export const initializeDeliver = (state: RootState) => {
   state.deliver.value;
 };
