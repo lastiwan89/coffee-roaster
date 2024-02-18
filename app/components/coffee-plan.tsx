@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Button from "./button";
 import { RootState } from "../lib/store";
 import {
   COFFEE_DELIVER,
@@ -22,28 +21,17 @@ import ToggleWeight from "./toggle/ToggleWeight";
 import ToggleDeliver from "./toggle/ToggleDeliver";
 
 export default function CoffeePlan() {
-  const initialFilter = useAppSelector(
-    (state: RootState) => state.filter.value,
-  );
   const initialFilterToggle = useAppSelector(
     (state: RootState) => state.filter.toggle,
   );
-  const initialBlend = useAppSelector((state: RootState) => state.blend.value);
   const initialBlendToggle = useAppSelector(
     (state: RootState) => state.blend.toggle,
-  );
-  const initialWeight = useAppSelector(
-    (state: RootState) => state.weight.value,
   );
   const initialWeightToggle = useAppSelector(
     (state: RootState) => state.weight.toggle,
   );
-  const initialGrind = useAppSelector((state: RootState) => state.grind.value);
   const initialGrindToggle = useAppSelector(
     (state: RootState) => state.grind.toggle,
-  );
-  const initialDeliver = useAppSelector(
-    (state: RootState) => state.deliver.value,
   );
   const initialDeliverToggle = useAppSelector(
     (state: RootState) => state.deliver.toggle,
@@ -51,114 +39,96 @@ export default function CoffeePlan() {
   const dispatch = useAppDispatch();
   return (
     <div>
-      <section>
+      <section className="py-8">
         {/* filter */}
-        <div>
+        <div className="py-8">
           <ToggleFilter />
           {!initialFilterToggle && (
-            <div className="grid md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
               {COFFEE_FILTER.map((item) => (
                 <div
                   onClick={() => dispatch(setFilter(item.title))}
-                  className="shadow-box grid cursor-pointer rounded-sm bg-cream-light p-6 hover:bg-cyan-dark hover:text-cream-light"
+                  className="shadow-box grid cursor-pointer rounded-sm bg-grey-light/10 p-6 hover:bg-cyan-dark hover:text-cream-light md:gap-4 md:pb-16 md:pt-8"
                   key={item.id}
                 >
-                  <p className="text-24 font-serif font-bold">{item.title}</p>
-                  <p className="text-16 font-sans font-normal">{item.text}</p>
+                  <p className="font-serif text-24 font-bold">{item.title}</p>
+                  <p className="font-sans text-16 font-normal">{item.text}</p>
                 </div>
               ))}
             </div>
           )}
         </div>
         {/* blend */}
-        <div>
+        <div className="py-8">
           <ToggleBlend />
           {!initialBlendToggle && (
-            <div className="grid md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
               {COFFEE_BLEND.map((item) => (
                 <div
                   onClick={() => dispatch(setBlend(item.title))}
-                  className="shadow-box grid cursor-pointer rounded-sm bg-cream-light p-6 hover:bg-cyan-dark hover:text-cream-light"
+                  className="shadow-box grid cursor-pointer rounded-sm bg-grey-light/10 p-6 hover:bg-cyan-dark hover:text-cream-light md:gap-4 md:pb-16 md:pt-8"
                   key={item.id}
                 >
-                  <p className="text-24 font-serif font-bold">{item.title}</p>
-                  <p className="text-16 font-sans font-normal">{item.text}</p>
+                  <p className="font-serif text-24 font-bold">{item.title}</p>
+                  <p className="font-sans text-16 font-normal">{item.text}</p>
                 </div>
               ))}
             </div>
           )}
         </div>
         {/* weight */}
-        <div>
+        <div className="py-8">
           <ToggleWeight />
           {!initialWeightToggle && (
-            <div className="grid md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
               {COFFEE_WEIGHT.map((item) => (
                 <div
                   onClick={() => dispatch(setWeight(item.title))}
-                  className="shadow-box grid cursor-pointer rounded-sm bg-cream-light p-6 hover:bg-cyan-dark hover:text-cream-light"
+                  className="shadow-box grid cursor-pointer rounded-sm bg-grey-light/10 p-6 hover:bg-cyan-dark hover:text-cream-light md:gap-4 md:pb-16 md:pt-8"
                   key={item.id}
                 >
-                  <p className="text-24 font-serif font-bold">{item.title}</p>
-                  <p className="text-16 font-sans font-normal">{item.text}</p>
+                  <p className="font-serif text-24 font-bold">{item.title}</p>
+                  <p className="font-sans text-16 font-normal">{item.text}</p>
                 </div>
               ))}
             </div>
           )}
         </div>
         {/* grind */}
-        <div>
+        <div className="py-8">
           <ToggleGrind />
           {!initialGrindToggle && (
-            <div className="grid md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
               {COFFEE_GRIND.map((item) => (
                 <div
                   onClick={() => dispatch(setGrind(item.title))}
-                  className="shadow-box grid cursor-pointer rounded-sm bg-cream-light p-6 hover:bg-cyan-dark hover:text-cream-light"
+                  className="shadow-box grid cursor-pointer rounded-sm bg-grey-light/10 p-6 hover:bg-cyan-dark hover:text-cream-light md:gap-4 md:pb-16 md:pt-8"
                   key={item.id}
                 >
-                  <p className="text-24 font-serif font-bold">{item.title}</p>
-                  <p className="text-16 font-sans font-normal">{item.text}</p>
+                  <p className="font-serif text-24 font-bold">{item.title}</p>
+                  <p className="font-sans text-16 font-normal">{item.text}</p>
                 </div>
               ))}
             </div>
           )}
         </div>
         {/* deliver */}
-        <div>
+        <div className="py-8">
           <ToggleDeliver />
           {!initialDeliverToggle && (
-            <div className="grid md:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-3">
               {COFFEE_DELIVER.map((item) => (
                 <div
                   onClick={() => dispatch(setDeliver(item.title))}
-                  className="shadow-box grid cursor-pointer rounded-sm bg-cream-light p-6 hover:bg-cyan-dark hover:text-cream-light"
+                  className="shadow-box grid cursor-pointer rounded-sm bg-grey-light/10 p-6 hover:bg-cyan-dark hover:text-cream-light md:gap-4 md:pb-16 md:pt-8"
                   key={item.value}
                 >
-                  <p className="text-24 font-serif font-bold">{item.title}</p>
-                  <p className="text-16 font-sans font-normal">{item.text}</p>
+                  <p className="font-serif text-24 font-bold">{item.title}</p>
+                  <p className="font-sans text-16 font-normal">{item.text}</p>
                 </div>
               ))}
             </div>
           )}
-        </div>
-      </section>
-      <section className="my-28 grid gap-14">
-        <div className="grid gap-2 rounded-md bg-grey-dark px-6 py-8">
-          <p className="text-16 font-sans font-normal uppercase text-cream-light opacity-50">
-            order summary
-          </p>
-          <p className="text-24 font-serif font-black text-cream-light">
-            “I drink my coffee as{" "}
-            <span className="text-cyan-dark">{initialFilter}</span>, with a{" "}
-            <span className="text-cyan-dark">{initialBlend}</span> type of bean.{" "}
-            <span className="text-cyan-dark">{initialWeight}</span> ground ala{" "}
-            <span className="text-cyan-dark">{initialGrind}</span>, sent to me{" "}
-            <span className="text-cyan-dark">{initialDeliver}</span>.”
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <Button />
         </div>
       </section>
     </div>
